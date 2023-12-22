@@ -1,6 +1,6 @@
 {
     "name": "maplestory-types",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": false,
     "scripts": {
         "build": "del /s /q dist\\* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup.sh",
