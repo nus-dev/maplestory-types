@@ -1,0 +1,32 @@
+{
+    "name": "maplestory-types",
+    "version": "0.0.1",
+    "private": false,
+    "scripts": {
+        "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup.sh",
+        "lint": "next lint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nus-dev/maplestory-types.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nus-dev/maplestory-types/issues"
+    },
+    "homepage": "https://github.com/nus-dev/maplestory-types#readme",
+    "description": "",
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/mjs/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/mjs/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    }
+}
