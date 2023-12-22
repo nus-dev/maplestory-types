@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": false,
     "scripts": {
-        "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup.sh",
+        "build": "del /s /q dist\\* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup.sh",
         "lint": "next lint"
     },
     "repository": {
